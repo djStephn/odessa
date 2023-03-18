@@ -1,25 +1,16 @@
 {
-  "name": "GCNE",
+  "name": "Nimbly Tailwind Base",
   "version": "1.0.0",
-  "description": "Tailwind Elements",
+  "description": "Nimbly base setup with tailwind",
   "main": "tailwind.config.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "sass": "sass uri/css/app.css/sass/style.scss uri/css/app.css/css/style.css",
     "tw": "npx tailwindcss -i ./.tailwind/in.css -o ./.tailwind/out.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Volst/nimbly-groenechemie.git"
   },
   "author": "Nimbly Web Systems",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Volst/nimbly-groenechemie/issues"
-  },
-  "homepage": "https://github.com/Volst/nimbly-groenechemie#readme",
   "dependencies": {
     "tw-elements": "^1.0.0-alpha13"
   },
