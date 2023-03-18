@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body.nimbly-bar {
+        padding-right: 30px !important;
+    }
+
+    #nimblybar {
+        @apply bg-emerald-900;
+    }
+
+    .modal .nav-tabs .nav-link.active {
+        @apply text-emerald-700;
+        @apply border-emerald-800;
+    }
+.prose *:first-child {
+    margin-top: 0 !important;
+}
+
+.prose a {
+    @apply text-emerald-700;
+    @apply no-underline;
+}
+
+.prose a:hover {
+    @apply underline;
+}
+}

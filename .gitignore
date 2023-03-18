@@ -1,0 +1,7 @@
+/data/.tmp/
+/data/users/
+/static/_thumb_/
+/node_modules/
+.sass-cache/
+.htaccess
+.DS_Store
