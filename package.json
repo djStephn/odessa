@@ -1,5 +1,5 @@
 {
-  "name": "Nimbly Tailwind Base",
+  "name": "nimbly-tailwind-base",
   "version": "1.0.0",
   "description": "Nimbly base setup with tailwind",
   "main": "tailwind.config.js",
