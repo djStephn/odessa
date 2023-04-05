@@ -33,8 +33,16 @@ If you need another port than the default 80, type -p YOURPORT:80. Verify the im
 If running Docker with Docker ToolBox, you need to replace localhost with the ip of the virtual box: [http://192.168.99.100/](http://192.168.99.100/)
 On Windows Systems, the "FULLPATHTOWHEREYOUCLONEDTHESOURCE" needs to be somewhere in your own Users directory, e.g. //c/Users/John/Documents/Nimbly
 
-Installation Script
--------------------
+First run
+---------
 The first time you run the source, go to [http://localhost/install.php](http://localhost/install.php) to make a super user account and setup the directory structure. This needs to be done only once. 
+
+In 'ext', execute `npm install`
+
+Compiling CSS
+-------------
+Execute `npm run tw` to recompile the tailwind css file
+
+
 
 
