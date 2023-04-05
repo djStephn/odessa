@@ -6,7 +6,7 @@ Clone the nimbly core into 'nimbly-base-tailwind':<br />
 
 ```
 cd ~/work (or replace with your project root dir)
-git clone git@gitlab.com:Nimbly-Web-Systems-firma/nimbly.git nimbly-base-tailwind
+git clone git@github.com:Nimbly-Web-Systems/nimbly-core.git nimbly-base-tailwind
 cd nimbly-base-tailwind
 ```
 
