@@ -353,13 +353,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -446,13 +439,11 @@ body.nimbly-bar {
 .prose a {
   --tw-text-opacity: 1;
   color: rgb(4 120 87 / var(--tw-text-opacity));
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 .prose a:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 *, ::before, ::after {
@@ -1411,7 +1402,6 @@ textarea.form-control.is-invalid {
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   opacity: 0.25;
 }
@@ -1420,7 +1410,6 @@ textarea.form-control.is-invalid {
   pointer-events: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   opacity: 0.25;
 }
@@ -1976,7 +1965,6 @@ textarea.form-control.is-invalid {
 }
 
 .sticky-top {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -1992,90 +1980,72 @@ textarea.form-control.is-invalid {
 }
 
 .animation {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   padding: auto;
 }
 
 .fade-in {
-  -webkit-animation-name: _fade-in;
   animation-name: _fade-in;
 }
 
 .fade-out {
-  -webkit-animation-name: _fade-out;
   animation-name: _fade-out;
 }
 
 .animation.infinite {
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
 .animation.delay-1s {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
 
 .animation.delay-2s {
-  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
 .animation.delay-3s {
-  -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
 
 .animation.delay-4s {
-  -webkit-animation-delay: 4s;
   animation-delay: 4s;
 }
 
 .animation.delay-5s {
-  -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 
 .animation.fast {
-  -webkit-animation-duration: 800ms;
   animation-duration: 800ms;
 }
 
 .animation.faster {
-  -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
 }
 
 .animation.slow {
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
 .animation.slower {
-  -webkit-animation-duration: 3s;
   animation-duration: 3s;
 }
 
 .slide-in-left {
-  -webkit-animation-name: _slide-in-left;
   animation-name: _slide-in-left;
 }
 
 .slide-in-right {
-  -webkit-animation-name: _slide-in-right;
   animation-name: _slide-in-right;
 }
 
 .slide-out-left {
-  -webkit-animation-name: _slide-out-left;
   animation-name: _slide-out-left;
 }
 
 .slide-out-right {
-  -webkit-animation-name: _slide-out-right;
   animation-name: _slide-out-right;
 }
 
@@ -2878,7 +2848,6 @@ textarea.form-control.is-invalid {
 
 .stepper.stepper-mobile .stepper-step {
   flex: unset;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin: 1rem 0 1rem 0;
@@ -2918,10 +2887,6 @@ textarea.form-control.is-invalid {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .form-control::-webkit-file-upload-button {
-    -webkit-transition: none;
-    transition: none;
-  }
   .form-control::file-selector-button {
     transition: none;
   }
@@ -2994,12 +2959,10 @@ textarea.form-control.is-invalid {
   }
 
   .spinner-border {
-    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
   }
 
   .spinner-grow {
-    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
   }
 }
@@ -3093,7 +3056,6 @@ textarea.form-control.is-invalid {
   }
 
   .sticky-sm-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -3172,7 +3134,6 @@ textarea.form-control.is-invalid {
   }
 
   .sticky-md-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -3259,7 +3220,6 @@ textarea.form-control.is-invalid {
   }
 
   .sticky-lg-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -3342,7 +3302,6 @@ textarea.form-control.is-invalid {
   }
 
   .sticky-xl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -3421,7 +3380,6 @@ textarea.form-control.is-invalid {
   }
 
   .sticky-xxl-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -3566,7 +3524,6 @@ textarea.form-control.is-invalid {
 @media (prefers-reduced-motion) {
   .animation {
     transition: none !important;
-    -webkit-animation: unset !important;
     animation: unset !important;
   }
 }
@@ -3635,17 +3592,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _spinner-grow {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 @keyframes _spinner-grow {
   0% {
     transform: scale(0);
@@ -3654,16 +3600,6 @@ textarea.form-control.is-invalid {
   50% {
     opacity: 1;
     transform: none;
-  }
-}
-
-@-webkit-keyframes _fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }
 
@@ -3677,16 +3613,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _fade-out {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
 @keyframes _fade-out {
   from {
     opacity: 1;
@@ -3697,34 +3623,10 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _fade-in-down {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes _fade-in-down {
   from {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes _fade-in-left {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -3745,34 +3647,10 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _fade-in-right {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes _fade-in-right {
   from {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes _fade-in-up {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
   }
 
   to {
@@ -3793,17 +3671,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _fade-out-down {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
 @keyframes _fade-out-down {
   from {
     opacity: 1;
@@ -3812,17 +3679,6 @@ textarea.form-control.is-invalid {
   to {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
-  }
-}
-
-@-webkit-keyframes _fade-out-left {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -3837,17 +3693,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _fade-out-right {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
 @keyframes _fade-out-right {
   from {
     opacity: 1;
@@ -3856,17 +3701,6 @@ textarea.form-control.is-invalid {
   to {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
-  }
-}
-
-@-webkit-keyframes _fade-out-up {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    transform: translate3d(0, -100%, 0);
   }
 }
 
@@ -3881,32 +3715,10 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _slide-in-down {
-  from {
-    visibility: visible;
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes _slide-in-down {
   from {
     visibility: visible;
     transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes _slide-in-left {
-  from {
-    visibility: visible;
-    transform: translate3d(-100%, 0, 0);
   }
 
   to {
@@ -3925,32 +3737,10 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _slide-in-right {
-  from {
-    visibility: visible;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes _slide-in-right {
   from {
     visibility: visible;
     transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes _slide-in-up {
-  from {
-    visibility: visible;
-    transform: translate3d(0, 100%, 0);
   }
 
   to {
@@ -3969,17 +3759,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _slide-out-down {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
 @keyframes _slide-out-down {
   from {
     transform: translate3d(0, 0, 0);
@@ -3988,17 +3767,6 @@ textarea.form-control.is-invalid {
   to {
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
-  }
-}
-
-@-webkit-keyframes _slide-out-left {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -4013,17 +3781,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _slide-out-right {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
 @keyframes _slide-out-right {
   from {
     transform: translate3d(0, 0, 0);
@@ -4032,17 +3789,6 @@ textarea.form-control.is-invalid {
   to {
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
-  }
-}
-
-@-webkit-keyframes _slide-out-up {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    transform: translate3d(0, -100%, 0);
   }
 }
 
@@ -4057,16 +3803,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _slide-down {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
 @keyframes _slide-down {
   from {
     transform: translate3d(0, 0, 0);
@@ -4074,16 +3810,6 @@ textarea.form-control.is-invalid {
 
   to {
     transform: translate3d(0, 100%, 0);
-  }
-}
-
-@-webkit-keyframes _slide-left {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(-100%, 0, 0);
   }
 }
 
@@ -4097,16 +3823,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _slide-right {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(100%, 0, 0);
-  }
-}
-
 @keyframes _slide-right {
   from {
     transform: translate3d(0, 0, 0);
@@ -4114,16 +3830,6 @@ textarea.form-control.is-invalid {
 
   to {
     transform: translate3d(100%, 0, 0);
-  }
-}
-
-@-webkit-keyframes _slide-up {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, -100%, 0);
   }
 }
 
@@ -4137,17 +3843,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _zoom-in {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
 @keyframes _zoom-in {
   from {
     opacity: 0;
@@ -4156,21 +3851,6 @@ textarea.form-control.is-invalid {
 
   50% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes _zoom-out {
-  from {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  to {
-    opacity: 0;
   }
 }
 
@@ -4186,52 +3866,6 @@ textarea.form-control.is-invalid {
 
   to {
     opacity: 0;
-  }
-}
-
-@-webkit-keyframes _tada {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  10% {
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  20% {
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  50% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  70% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  60% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -4281,20 +3915,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@-webkit-keyframes _pulse {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
 @keyframes _pulse {
   from {
     transform: scale3d(1, 1, 1);
@@ -4306,18 +3926,6 @@ textarea.form-control.is-invalid {
 
   to {
     transform: scale3d(1, 1, 1);
-  }
-}
-
-@-webkit-keyframes _show-up-clock {
-  0% {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
   }
 }
 
@@ -4362,7 +3970,6 @@ textarea.form-control.is-invalid {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -4376,6 +3983,10 @@ textarea.form-control.is-invalid {
 
 .float-right {
   float: right;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-auto {
@@ -4427,6 +4038,10 @@ textarea.form-control.is-invalid {
 
 .hidden {
   display: none;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .h-full {
@@ -4602,6 +4217,16 @@ textarea.form-control.is-invalid {
   border-color: transparent;
 }
 
+.bg-green-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -4686,6 +4311,11 @@ textarea.form-control.is-invalid {
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -4694,6 +4324,10 @@ textarea.form-control.is-invalid {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-medium {
@@ -4713,6 +4347,16 @@ textarea.form-control.is-invalid {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-green-900 {
+  --tw-text-opacity: 1;
+  color: rgb(20 83 45 / var(--tw-text-opacity));
+}
+
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
@@ -4730,11 +4374,6 @@ textarea.form-control.is-invalid {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -4772,9 +4411,9 @@ textarea.form-control.is-invalid {
 }
 
 .transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -4812,13 +4451,11 @@ textarea.form-control.is-invalid {
 }
 
 .hover\:underline:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .hover\:no-underline:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 .hover\:opacity-75:hover {
