@@ -1,1 +1,4 @@
-<link rel="stylesheet" href="[base-url]/css/theme.css?v=[app-modified]">
+<style>
+[include file=[base-path]core/uri/css/app.css/css/style.css]
+[include file=[base-path]ext/.tailwind/out.css]
+</style>
