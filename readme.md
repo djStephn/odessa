@@ -38,12 +38,4 @@ Installation Script
 The first time you run the source, go to [http://localhost/install.php](http://localhost/install.php) to make a super user account and setup the directory structure. This needs to be done only once. 
 
 
-# odessa
-# odessa
-# odessa
-# odessa
-# odessa
-# odessa
-# odessa
-# odessa
-# odessa
+
