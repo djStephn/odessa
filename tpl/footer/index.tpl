@@ -10,25 +10,23 @@
   <div class="container p-6 text-neutral-800 dark:text-neutral-200">
     <div class="grid gap-4 lg:grid-cols-2">
       <div class="mb-6 md:mb-0">
-        <h5 class="mb-2 font-medium uppercase">Footer text</h5>
+        <h5 class="mb-2 font-medium uppercase">
+          [render resource=content uuid=footer field=footer_1_title tpl=plain_text]
+        </h5>
 
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-          atque ea quis molestias. Fugiat pariatur maxime quis culpa
-          corporis vitae repudiandae aliquam voluptatem veniam, est atque
-          cumque eum delectus sint!
-        </p>
+        <div class="mb-4">
+          [render resource=content uuid=footer field=footer_1 tpl=plain_text]
+        </div>
       </div>
 
       <div class="mb-6 md:mb-0">
-        <h5 class="mb-2 font-medium uppercase">Footer text</h5>
+        <h5 class="mb-2 font-medium uppercase">
+          [render resource=content uuid=footer field=footer_2_title tpl=plain_text]
+        </h5>
 
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-          atque ea quis molestias. Fugiat pariatur maxime quis culpa
-          corporis vitae repudiandae aliquam voluptatem veniam, est atque
-          cumque eum delectus sint!
-        </p>
+        <div class="mb-4">
+          [render resource=content uuid=footer field=footer_2 tpl=plain_text]
+        </div>
       </div>
     </div>
   </div>
