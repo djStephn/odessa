@@ -7,17 +7,17 @@
 
 <!--logo--> 
 <div>
-  <a href="http://localhost/" class="flex items-center py-6 px-1 hover:opacity-75">
+  <a href="[base-url]/" class="flex items-center py-6 px-1 hover:opacity-75">
   <img class="object-scale-down center h-14 w-14" img src="[base-url]/favicon.png">
 </a>
 </div>
 
 <!--primary nav-->
 <div class="hidden md:flex items-center space-x-1 text-xl font-bold">
-  <a href="http://localhost/odessa" class="py-6 px-1 text-gray-600 hover:text-gray">radio</a>
-  <a href="http://localhost/playlists" class="py-6 px-1 text-gray-600 hover:text-gray">playlists</a>
-  <a href="http://localhost/blog" class="py-6 px-1 text-gray-600 hover:text-gray">blog</a>
-  <a href="http://localhost/mixcloud" class="py-6 px-1 text-gray-600 hover:text-gray">mixcloud</a>
+  <a href="[base-url]/odessa" class="py-6 px-1 text-gray-600 hover:text-gray">radio</a>
+  <a href="[base-url]/playlists" class="py-6 px-1 text-gray-600 hover:text-gray">playlists</a>
+  <a href="[base-url]/blog" class="py-6 px-1 text-gray-600 hover:text-gray">blog</a>
+  <a href="[base-url]/mixcloud" class="py-6 px-1 text-gray-600 hover:text-gray">mixcloud</a>
   
 </div>
 
